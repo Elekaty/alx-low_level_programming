@@ -13,10 +13,10 @@ int main(void)
 
 	i = 0;
 	/**
-	 * stop the loop the
+	 * stop the loop
 	 *
 	 */
-	printf("infinite loop avoided: \\o/\n");
+	printf("infinite loop avoided! \\o/\n");
 
 	return (0);
 }
