@@ -34,13 +34,13 @@ void print_number(int n)
 		z = n;
 	while (z / j > 9)
 	{
-		b = b * 10;
+		j = j * 10;
 	}
 	while (j > 0)
 	{
 		i = z / j;
 		z = z % j;
-		_putchar (m + '0');
+		_putchar (j + '0');
 		j = j / 10;
 	}
 	}
