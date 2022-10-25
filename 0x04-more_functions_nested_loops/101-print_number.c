@@ -9,7 +9,7 @@
 void print_number(int n)
 {
 	unsigned int z;
-	signed int i, j;
+	int m, j;
 
 	j = 10;
 
@@ -38,7 +38,7 @@ void print_number(int n)
 	}
 	while (j > 0)
 	{
-		i = z / j;
+		m = z / j;
 		z = z % j;
 		_putchar (j + '0');
 		j = j / 10;
