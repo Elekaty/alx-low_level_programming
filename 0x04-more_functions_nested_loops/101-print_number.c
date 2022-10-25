@@ -40,7 +40,7 @@ void print_number(int n)
 	{
 		m = z / j;
 		z = z % j;
-		_putchar (j + '0');
+		_putchar (m + '0');
 		j = j / 10;
 	}
 	}
