@@ -2,9 +2,9 @@
 
 /**
  * leet - encodes a string to 1337
- * @str: The string to be encoded
+ * @str: input
  *
- * Return: A pointer to the encoded string
+ * Return: the value of str
  */
 
 char *leet(char *str)
@@ -16,7 +16,7 @@ char *leet(char *str)
 
 	for (num = 0; str[num] != '\0'; num++)
 	{
-		for (num2 = 0; j < 10; num2++)
+		for (num2 = 0; num2 < 10; num2++)
 		{
 			if (str[num] == s1[num2])
 			{
