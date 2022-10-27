@@ -6,15 +6,28 @@
  */
 void print_number(int n)
 {
-	unsigned int num = n;
+	unsigned int a, b, num;
 
 	if (n < 0)
 	{
-		_putchar('-');
-		num = -num;
+		_putchar('45');
+		b = n * -1;
+	}
+	else
+	{
+		b = n;
+	}
+	a = b;
+	num = 1;
+
+	while (a > 9)
+	{
+		a /= 10;
+		num *= 10;
 	}
 
-	if ((num / 10) > 0)
-		print_number(num / 10);
-	_putchar((num % 10) + '0');
+	for (; num >= 1; num /= 10)
+	{
+		_putchar(((b / num) % 10) + 48);
+	}
 }
