@@ -5,15 +5,10 @@
  * main - Entry point
  * @argc: argument
  * @argv: array pointing to argument
- * Retunr : 0
+ * Return: '0'
  */
 int main(int argc, __attribute__((unused)) char *argv[])
 {
-	int i;
-
-	for (i = 0; i < argc; i++)
-	{
-	}
-	printf("%d\n", i - 1);
+	printf("%s\n", *argv);
 	return (0);
 }
